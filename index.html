@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+	
+    <title>Voya - Customer Portal</title>
+  </head>
+  <body>
+	<a name="#top"></a>
+	<input type="hidden" value="50,000" id="storeCoverageAmount" />
+    <header>
+		<div class="container">
+			<div class="row">
+				<div class="col-3">
+					<div class="login">
+						<div class="dropdown show language">
+							<a class="dropdown-toggle mobile d-block d-sm-none" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/globe_mobile.png" alt="Language" /></a>
+						  <a class="btn btn-secondary dropdown-toggle d-none d-sm-inline-block" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							English
+						  </a>
+
+						  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">English</a>
+						  </div>
+						</div>
+						<div class="user">
+							<a class="dropdown-toggle d-none d-sm-inline-block" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="images/profile.png" alt="Language" />
+							</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="logo">
+						<a href="#" title="Voya">
+							<img src="images/logo.png" alt="Voya" />
+						</a>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="search-section d-none d-sm-block">
+						<a href="#" title="Search" class="search-icon">
+							<img src="images/search-gray.png" alt="Search" />
+						</a>
+						<div class="search-area" alt="Search">
+							<input type="text" id="search" name="search" placeholder="Search">
+							<input type="button" id="btn-search" value="">
+						</div>
+					</div>
+					<div class="mobile-user">
+						<a class="dropdown-toggle mobile d-block d-sm-none" href="#" role="button" id="dropdownProfileLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="images/profile.png" alt="Language" />
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownProfileLink">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+    <section>
+		<div class="loader">
+			<img src="images/loading.gif" alt="Loading" />
+		</div>
+		<div class="container">
+			<div id="voya-carousal" class="carousel slide" data-interval="false" data-ride="false">
+
+				<div class="carousel-inner">
+					<div class="carousel-item active firstView noShowPrev">
+						<div class="carousel-inner">
+							<p>Hi James, Welcome to VOYA Supplemental Policy Portal.</p>
+							<h2>Here is your current coverage information on your group term contract.</h2>
+							<div class="row">
+								<div class="col-sm-12 col-md-4 offset-md-2">
+									<div class="content-box">
+										<div class="title">James Johnson</div>
+										<div class="content">
+											<ul class="coverage-details">
+												<li class="info"><p>Coverage Information</p><span>Employee Term Life</span></li>
+												<li class="amount"><p>Coverage Amount</p><span>$50,000</span></li>
+											</ul>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-4">
+									<div class="content-box">
+										<div class="title">Judy Johnson</div>
+										<div class="content">
+											<ul class="coverage-details">
+												<li class="info"><p>Coverage Information</p><span>Employee Term Life</span></li>
+												<li class="amount"><p>Coverage Amount</p><span>$50,000</span></li>
+											</ul>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+							<h2>I would like to add supplimental coverage for</h2>
+							<div class="row">
+								<div class="col-sm-12 col-md-4 offset-md-2">
+									<div class="coverage-profile">
+										<span class="male"></span>
+										<div class="input-section">
+											<label for="checkBox1" class="ckBox-label">James Johnson
+												<input type="checkbox" class="ckBox" id="checkBox1" value="James Johnson">  						       <span class="checkmark"></span>
+										    </label>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 col-md-4">
+									<div class="coverage-profile">
+										<span class="female"></span>
+										<div class="input-section">
+											<label for="checkBox2" class="ckBox-label">Judy Johnson
+												<input type="checkbox" class="ckBox" id="checkBox2" value="Judy Johnson">  								   <span class="checkmark"></span>
+										    </label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item coverage-amount">
+						<div class="carousel-inner">
+							<h2>I want a coverage of</h2>
+							<div class="section-coverage-amt">
+								<div><span>$</span><input type="text" value="50,000" id="ipCoverageAmount" class="coverage-amt"/></div>
+								<div><img src="images/img_umbrella.png" alt="Coverage Amount" /></div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item personal-details">
+						<div class="carousel-inner">
+							<h2>Covrage Amount</h2>
+							<div class="section-coverage-amt section-coverage-amt-disabled">
+								<div><span>$</span><input type="text" value="50,000" id="dispCoverageAmount" disabled="disabled" class="coverage-amt"/></div>
+								<h3 class="d-none d-sm-inline-block">Please tell us about yourself</h3>
+							</div>
+							<div class="section-personal-details">
+								<ul>
+									<li>
+										<img src="images/icon_height.png" class="d-none d-sm-inline-block" alt="" />
+										<img src="images/img_mobile_height.png" class="d-block d-sm-none" alt="" />
+										<p>My Height is</p>
+										<input type="text" value="6">
+										<span>FT</span>
+										<input type="text" value="2">
+										<span>IN</span>										
+									</li>
+									<li>
+										<img src="images/icon_weight.png" class="d-none d-sm-inline-block" alt="" />
+										<img src="images/img_mobile_weight.png" class="d-block d-sm-none" alt="" />
+										<p>My Weight is</p>
+										<input type="text" value="195" class="three-digit" >
+										<span>LBS</span>								
+									</li>
+									<li>
+										<img src="images/icon_tobacco.png" class="d-none d-sm-inline-block" alt="" />
+										<img src="images/img_mobile_tobacco.png" class="d-block d-sm-none" alt="" />
+										<p>I am</p>
+										<select><option>Not a </option><option> a </option></select>
+										<p>Tobacco User</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="carousel-item questionnaire">
+						<div class="carousel-inner">
+							<p class="thanks">Thank you for the basic Information.</p>
+							<p>Let&apos;s proceed by providing us a few health related information.</p>
+							<img src="images/icon_health_questionnaire.png" alt="Health Questionnaire" />
+							<h4>Health Questionnaire</h4>
+						</div>
+						<div class="section-questionnaire">
+							<div class="row">
+								<div class="col-sm-12 col-md-3"> <p class="question">Question 1</p> </div>
+								<div class="col-sm-12 col-md-6">
+									<p>Within the last 5 years have you been treated for or been diagnosed by a member of the medical profession or health practitioner as having AIDS (Acquired Immunodeficiency Syndrome)?</p>
+								</div>
+								<div class="col-sm-12 col-md-3">
+									<div class="yes-no-switch">
+										<input class="switch-checkbox" type="checkbox" name="followinglist" value="Question 1" aria-labelledby="form_input_group7709368 checkbox9360681">
+										<div class="checkboxGen">
+											<span class="yes">Yes</span>
+											<span class="no">No</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3"> <p class="question">Question 2</p> </div>
+								<div class="col-sm-12 col-md-6">
+									<p>Within the last 5 years have you been treated for, any of the following: insulin dependent diabetes, heart attack, coronary bypass/angioplasty, heart valve repair/replacement, stroke, metastatic cancer, emphysema or been an organ transplant recipient?</p>
+								</div>
+								<div class="col-sm-12 col-md-3">
+									<div class="yes-no-switch">
+										<input class="switch-checkbox" type="checkbox" name="followinglist" value="Question 1" aria-labelledby="form_input_group7709368 checkbox9360681">
+										<div class="checkboxGen">
+											<span class="yes">Yes</span>
+											<span class="no">No</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3"> <p class="question">Question 3</p> </div>
+								<div class="col-sm-12 col-md-6">
+									<p>In the past 5 years have you been diagnosed or treated by a health practitioner, or taken medication for any disease or abnormality of the heart or blood vessels (excluding controlled high blood pressure), or any heart rhythm abnormality</p>
+								</div>
+								<div class="col-sm-12 col-md-3">
+									<div class="yes-no-switch">
+										<input class="switch-checkbox" type="checkbox" name="followinglist" value="Question3" aria-labelledby="form_input_group7709368 checkbox9360681">
+										<div class="checkboxGen">
+											<span class="yes">Yes</span>
+											<span class="no">No</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3"> <p class="question">Question 4</p> </div>
+								<div class="col-sm-12 col-md-6">
+									<p>In the past 5 years have you been diagnosed or treated by a health practitioner, or taken medication for any disease of the lung (excluding asthma), liver (excluding hepatitis A), pancreas or intestine?</p>
+								</div>
+								<div class="col-sm-12 col-md-3">
+									<div class="yes-no-switch">
+										<input class="switch-checkbox" type="checkbox" name="followinglist" value="Question4" aria-labelledby="form_input_group7709368 checkbox9360681">
+										<div class="checkboxGen">
+											<span class="yes">Yes</span>
+											<span class="no">No</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3"> <p class="question">Question 5</p> </div>
+								<div class="col-sm-12 col-md-6">
+									<p>In the past 5 years have you been diagnosed or treated by a health practitioner, or taken medication for Non-insulin dependent diabetes, impaired glucose tolerance, or pre-diabetes?</p>
+								</div>
+								<div class="col-sm-12 col-md-3">
+									<div class="yes-no-switch">
+										<input class="switch-checkbox" type="checkbox" name="followinglist" value="Question5" aria-labelledby="form_input_group7709368 checkbox9360681">
+										<div class="checkboxGen">
+											<span class="yes">Yes</span>
+											<span class="no">No</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3"> <p class="question">Question 6</p> </div>
+								<div class="col-sm-12 col-md-6">
+									<p>In the past 5 years have you been diagnosed or treated by a health practitioner, or taken medication for Cancer or tumor, rheumatoid arthritis, connective tissue disease, neurological disease (excluding headaches), autoimmune disease or any disease of the blood cells or serum including, but not limited to, anemia, polycythemia, or bleeding or clotting disorder?</p>
+								</div>
+								<div class="col-sm-12 col-md-3">
+									<div class="yes-no-switch">
+										<input class="switch-checkbox" type="checkbox" name="followinglist" value="Question6" aria-labelledby="form_input_group7709368 checkbox9360681">
+										<div class="checkboxGen">
+											<span class="yes">Yes</span>
+											<span class="no">No</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3"> <p class="question">Question 7</p> </div>
+								<div class="col-sm-12 col-md-6">
+									<p>In the past 5 years have you been diagnosed or treated by a health practitioner, or taken medication for Depression, psychosis, suicide attempt, drug or alcohol abuse or addiction?”</p>
+								</div>
+								<div class="col-sm-12 col-md-3">
+									<div class="yes-no-switch">
+										<input class="switch-checkbox" type="checkbox" name="followinglist" value="Question7" aria-labelledby="form_input_group7709368 checkbox9360681">
+										<div class="checkboxGen">
+											<span class="yes">Yes</span>
+											<span class="no">No</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 col-md-3"> <p class="question">Question 8</p> </div>
+								<div class="col-sm-12 col-md-6">
+									<p>In the past 5 years have you been diagnosed or treated by a health practitioner, or taken medication for Polycystic kidney disease or kidney failure?</p>
+								</div>
+								<div class="col-sm-12 col-md-3">
+									<div class="yes-no-switch">
+										<input class="switch-checkbox" type="checkbox" name="followinglist" value="Question8" aria-labelledby="form_input_group7709368 checkbox9360681">
+										<div class="checkboxGen">
+											<span class="yes">Yes</span>
+											<span class="no">No</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item agree">
+						<div class="carousel-inner">
+							<p class="thanks">Thank you James for providing the health information.</p>
+							<p>Please proceed by accepting the below declaration.</p>
+							<h4>Declaration</h4>
+							<div class="row">
+								<div class="col-sm-12 col-md-8 offset-md-2">
+									<p>
+										I declare that all of the statements and answers, as they pertain to me, my spouse and to my child(ren), if applicable, are complete and true to the best of my knowledge and belief. I realize that any misrepresentation or omission regarding the presence of any pre-existing impairments and/or diseases may result in the requested coverage or benefits provided by such coverage being contested. I understand that any claim incurred prior to the approval by VOYA’s Home Office will not be valid.”
+									</p>
+									<div class="input-section">
+										<label for="agreeCheckBox" class="ckBox-label">I Agree
+											<input type="checkbox" class="ckBox" id="agreeCheckBox" value="Judy Johnson">
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="btn-section">
+										<button class="btn btn-secondary prev" href="#voya-carousal" role="button" data-slide="prev">Back</button>
+										<button class="btn btn-secondary get-premium" disabled="disabled" href="#voya-carousal" role="button" data-slide="next">Get Premium</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item quote">
+						<div class="carousel-inner">
+							<p>Thank you for your time. Your application is in good order.</p>
+							<h2>Here is the premium for the Supplemental Term Life coverage for $<span id="dispCoverageAmount">50,000</span></h2>	
+							<div class="row">
+								<div class="col-sm-12 col-md-6 offset-md-3">
+									<div class="content-box">
+										<img src="images/icon_coverage_info_medium.png" alt="Quote" />
+										<div class="quote-amt">
+											<span>$</span>
+											<p>21.22</p>
+										</div>
+										<div class="yes-no-switch">
+											<input class="switch-checkbox" id="coveragePeriod" type="checkbox" name="followinglist" value="Coverage Period" >
+											<div class="checkboxGen">
+												<span class="yes">Month</span>
+												<span class="no">Year</span>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<button class="btn btn-secondary chg-cov-amt">Change Coverage Amount</button>
+							<button class="btn btn-secondary save-quote">Save Quote</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn-block">
+					<a class="btn btn-default prev " href="#voya-carousal" data-slide="prev">
+						<span class="designPrev"></span>
+						<span>Back</span>
+					</a>
+					<a class="btn btn-default next disabled" href="#voya-carousal" data-slide="next">
+						<span>Next</span>
+						<span class="designNxt"></span>
+					</a>
+				</div>
+			  
+			</div>
+		</div>
+	</section>
+	
+    <footer>
+		<div class="container">
+			<div class="row">
+				<div class="top">
+					855-ONE-VOYA
+				</div>
+				<div class="bottom">
+					@copy;2018 Voya Services Company. All rights reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+    <!-- Jquery and Bootstrap Scripts -->
+    <script src="js/vendor/jquery-3.0.0.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
